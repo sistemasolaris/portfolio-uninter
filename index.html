@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>Patrick Claudino Portfólio</title>
+</head>
+<body>
+    <div class="top-container">
+        <div class="top-bar">
+            <nav class="navbar" id="navbar">
+                <div class="top">
+                    <h1 id="title"><a href="/">Portfólio</a></h1>
+                    <a href="javascript:void(0);" class="icon" onclick="toggleHamburgerMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#about-me">Sobre mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section id="about-me">
+        <h2>Sobre mim</h2>
+        <div class="about-me-body">
+            <img src="./media/foto-icon.jpg" alt="Foto de Patrick Claudino">
+            <p><strong>Patrick Claudino</strong> é um desenvolvedor de software e estudante de Análise e Desenvolvimento de Sistemas na UNINTER.
+            Desde criança ele fomenta uma grande paixão pela área de computação, trabalhando em diversos projetos ao longo do tempo, e buscando
+            sempre aprender mais e crescer.</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skills-body">
+            <div>
+                <h3>Soft</h3>
+                <ul>
+                    <li>Organização</li>
+                    <li>Capacidade de adaptação</li>
+                    <li>Aprendizado rápido</li>
+                    <li>Trabalho em equipe</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Hard</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>C</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projetos</h2>
+        <div class="projects-body">
+            <div class="project">
+                <img src="./media/battleship.png" alt="Menu inicial do website de batalha naval">
+                <div class="project-details">
+                    <h3>Batalha Naval Online</h3>
+                    <p>Um website para se jogar batalha naval online com seus amigos. O back-end é feito em Python, usando Flask e uma biblioteca
+                    de WebSockets para possibilitar o multiplayer em tempo real. Há também um sistema inteiramente funcional de cadastro e login,
+                    utilizando SQLite como banco de dados.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/sistemasolaris/battleship">Código fonte</a>
+                        <a href="https://battleship-online.fly.dev/">Website</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="project">
+                <img src="./media/calculator.png" alt="Uma UI simulando uma calculadora">
+                <div class="project-details">
+                    <h3>Calculadora</h3>
+                    <p>Um website para uma calculadora escrita inteiramente em JavaScript, com suporte para as quatro operações básicas, e 8
+                    digitos de precisão. Esse foi um dos primeiros projetos de JavaScript em que eu trabalhei.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/sistemasolaris/calculator">Código fonte</a>
+                        <a href="https://sistemasolaris.github.io/calculator/">Website</a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contato</h2>
+        <form method="post" action="https://formsubmit.co/aa807478191867e886d6bf048328673d">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome..." required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail..." required>
+        
+            <label for="subject">Mensagem</label>
+            <textarea id="subject" name="subject" placeholder="Sua mensagem..." style="height:200px" required></textarea>
+        
+            <input class="submit" type="submit" value="Submit">
+          </form>
+    </section>
+</body>
+</html>
